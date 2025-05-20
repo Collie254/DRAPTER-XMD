@@ -16,14 +16,14 @@ const config = {
   MENU_IMAGE: process.env.MENU_IMAGE || "https://files.catbox.moe/mw30hn.jpg",
 
   // === Auto Features ===
-  AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN === 'false' ? false : true,
+  AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN === 'true' ? false : true,
   AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY === 'false' ? false : true,
   AUTO_DL: process.env.AUTO_DL === 'true',
   AUTO_READ: process.env.AUTO_READ === 'true',
   AUTO_TYPING: process.env.AUTO_TYPING === 'true',
   AUTO_RECORDING: process.env.AUTO_RECORDING === 'true',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE === 'true',
-  AUTO_REACT: process.env.AUTO_REACT === 'true',
+  AUTO_REACT: process.env.AUTO_REACT === 'false',
   AUTO_BLOCK: process.env.AUTO_BLOCK === 'false' ? false : true, // default true for 212 numbers
   STATUS_READ_MSG: process.env.STATUS_READ_MSG || '',
 
@@ -33,7 +33,7 @@ const config = {
 
   // === Extra Features / API Keys ===
   GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc", // Already valid
-  WELCOME: process.env.WELCOME === 'true',
+  WELCOME: process.env.WELCOME === 'false',
 };
 
 module.exports = config;
